@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web component</title>
+  <style>
+    h3{
+      color: green;
+    } 
+  </style>
+</head>
+<body>
+  <h3>Web Component Example</h3>
+
+  <!-- use custom element that gets data through attributes or slots-->
+  <user-card name="User Name" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+    <div slot="phone">+3077545194</div>
+    <div slot="email">alex@mail.com</div>
+  </user-card>
+
+  <user-card name="Another Name" avatar="https://randomuser.me/api/portraits/women/17.jpg">
+    <div slot="phone">+3064298734</div>
+    <div slot="email">mary@mail.com</div>
+  </user-card>
+
+  
+  <script src="./userCard.js"></script>
+</body>
+</html> 
